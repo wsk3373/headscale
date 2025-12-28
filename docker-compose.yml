@@ -1,0 +1,22 @@
+services:
+  headscale:
+    image: headscale/headscale:latest
+    container_name: headscale
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./conf:/etc/headscale
+      - headscale-data:/var/lib/headscale
+    entrypoint: headscale serve
+    networks:
+      - traefik_net
+#    labels:
+      # ── 基础开关 ─────────────────────────────────────
+#      traefik.enable: "true"
+
+networks:
+  traefik_net:
+    external: true
+volumes:
+  headscale-data: {}

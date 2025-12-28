@@ -1,0 +1,14 @@
+# /etc/headscale/derp.yaml
+regions:
+  901:
+    regionid: 901
+    regioncode: aly
+    regionname: "阿里云 DERP"
+    nodes:
+      - name: 1
+        regionid: 901
+        hostname: derp-aly.grep2000.com
+        port: 443
+        stunport: 3478
+        stunonly: false
+        insecure: true  # 关键：因为 staging 证书
