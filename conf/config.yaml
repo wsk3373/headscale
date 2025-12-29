@@ -113,7 +113,7 @@ derp:
   # List of externally available DERP maps encoded in JSON
   urls:
     - https://controlplane.tailscale.com/derpmap/default
-    - https://derp-aly.grep2000.com:4443
+    # - https://derp-aly.grep2000.com:4443
   # Locally available DERP map files encoded in YAML
   #
   # This option is mostly interesting for people hosting
