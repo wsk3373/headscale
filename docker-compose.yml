@@ -12,7 +12,6 @@ services:
     networks:
       - traefik_net
 #    labels:
-      # ── 基础开关 ─────────────────────────────────────
 #      traefik.enable: "true"
 
 networks:
