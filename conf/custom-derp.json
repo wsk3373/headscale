@@ -1,0 +1,19 @@
+{
+  "Regions": {
+    "900": {
+      "RegionID": 900,
+      "RegionCode": "sg-aliyun",
+      "RegionName": "Aliyu DERP",
+      "Nodes": [
+        {
+          "Name": "sg-derp-1",
+          "RegionID": 900,
+          "HostName": "derp-aly.grep2000.com",
+          "DERPPort": 4443,
+          "STUNPort": 3478
+        }
+      ]
+    }
+  }
+}
+
