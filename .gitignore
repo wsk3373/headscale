@@ -23,11 +23,6 @@ logs/
 vendor/
 
 dist/
-/headscale
-config.yaml
-config*.yaml
-!config-example.yaml
-derp.yaml
 *.hujson
 *.key
 /db.sqlite
