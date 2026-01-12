@@ -6,7 +6,7 @@ services:
     environment:
       - TZ=Asia/Shanghai
     volumes:
-      - $pwd/.headscale/config:/etc/headscale
+      - root/.headscale/config:/etc/headscale
       - headscale-data:/var/lib/headscale
     entrypoint: headscale serve
     networks:
