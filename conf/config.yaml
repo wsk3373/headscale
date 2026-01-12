@@ -112,7 +112,7 @@ derp:
 
   # List of externally available DERP maps encoded in JSON
   urls:
-    # - https://controlplane.tailscale.com/derpmap/default
+    - https://controlplane.tailscale.com/derpmap/default
     # - https://derp-aly.grep2000.com:4443
   # Locally available DERP map files encoded in YAML
   #
@@ -132,22 +132,22 @@ derp:
   # How often should we check for DERP updates?
   update_frequency: 3h
 
-  regions:
+  # regions:
 
-    "910": {
-      "RegionID":   910,
-      "RegionCode": "节点-1",
-      "Nodes": [
-        {
-          "Name":             "910",
-          "RegionID":         910,
-          "HostName":         "47.119.112.92",
-          "InsecureForTests": true,
-          "DERPPort":         36666,
-        },
-      ],
-      "RegionName": "中国-北京",
-    },
+  #   "910": {
+  #     "RegionID":   910,
+  #     "RegionCode": "节点-1",
+  #     "Nodes": [
+  #       {
+  #         "Name":             "910",
+  #         "RegionID":         910,
+  #         "HostName":         "47.119.112.92",
+  #         "InsecureForTests": true,
+  #         "DERPPort":         36666,
+  #       },
+  #     ],
+  #     "RegionName": "中国-北京",
+  #   },
 
 
 
