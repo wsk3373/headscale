@@ -131,18 +131,27 @@ derp:
 
   # How often should we check for DERP updates?
   update_frequency: 3h
-  # regions:         
-  #     900:
-  #       regionid: 900
-  #       regioncode: "sg-aliyun"
-  #       regionname: "Aliyun DERP"
-  #       nodes:
-  #         - name: "sg-derp-1"
-  #           regionid: 900
-  #           hostname: "derp-aly.grep2000.com"
-  #           derpport: 4443
-  #           stunport: 3478
-  
+
+  regions:
+
+    "910": {
+      "RegionID":   910,
+      "RegionCode": "节点-1",
+      "Nodes": [
+        {
+          "Name":             "910",
+          "RegionID":         910,
+          "HostName":         "47.119.112.92",
+          "InsecureForTests": true,
+          "DERPPort":         36666,
+        },
+      ],
+      "RegionName": "中国-北京",
+    },
+
+
+
+
 
 # Disables the automatic check for headscale updates on startup
 disable_check_updates: false
